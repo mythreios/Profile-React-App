@@ -3,7 +3,7 @@ import '../Css/ProfileCard.css';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-const ProfileCard = ({id, nickname, surname, age, image}) => {
+export const ProfileCard = ({id, nickname, surname, age, image}) => {
 
     function cardClick() {
         window.location.href = `/profiles/${id}`;
@@ -40,5 +40,3 @@ const ProfileCard = ({id, nickname, surname, age, image}) => {
     )
 
 }
-
-export default ProfileCard
